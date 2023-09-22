@@ -98,12 +98,60 @@ display: grid;
     font-weight: 700;
     color:#727272;
 }
-.team-title .of-our{
-}
 .team-title .text-Features{
  font-weight: 500;
- color:hsla(29, 99%, 33%, 0.992);
+ color:hsla(29, 99%, 33%, 0.992);}
+                    /* futere section releted style */
+
+.features{
+margin-top:130px;
+    display: flex;
+    gap: 30px;
 }
+.card{
+    padding-bottom: 20px;
+    padding-top:15px ;
+}
+.future-section .card{
+    padding: 30;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgb(0, 0, 0, 0.06);
+    
+
+}
+.ten-year-bage{
+    border-radius: 7px;
+    background: #FF900E;
+    color: #fff;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+
+}
+.ten-year-bage h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-year-bage p{
+    font-size: 1.5rem;
+
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.future-image img{
+    height: 90%;
+    margin-left: 50px;
+}
+
+
+
 /* facts section */
 .facts-card-container{
     display: flex;
@@ -141,8 +189,14 @@ display: grid;
 .sponsors-img-container img{
     width: 165px;
 }
+                        /* footer section releted style  */
 
-
+.main-footer{
+    background: #18e8a6;
+    text-align: center;
+    columns: #fff;
+    padding:20px;
+}
 
 
 
@@ -155,7 +209,8 @@ display: grid;
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    .features
     
     {
         flex-direction: column;
@@ -173,6 +228,17 @@ display: grid;
     .facts-card-container{
         gap: 20px;
     }
+    .future-image img{
+        width: 90%;
+        margin: 0;
+    }
+    .ten-year-bage{
+        position: static;
+        max-width: 300px;
+    }
+    .card{
+        padding: auto;
+    }
 }
 
 
@@ -183,6 +249,7 @@ display: grid;
         padding: 50px;
     }
     nav,
+    .features,
     .teams-container{
         flex-direction: column;
     }
